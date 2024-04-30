@@ -1,0 +1,9 @@
+services:
+  paper:
+    build: .
+    ports:
+      - 25565:25565
+    volumes:
+      - ./server:/papermc
+    env_file:
+      - .env
